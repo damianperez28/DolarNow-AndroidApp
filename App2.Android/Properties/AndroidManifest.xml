@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.dolarnowv1.app" android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="34" android:targetSdkVersion="34" />
+	<application android:label="Dolar Now" android:theme="@style/MainTheme" android:icon="@mipmap/dolarnow_icon"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

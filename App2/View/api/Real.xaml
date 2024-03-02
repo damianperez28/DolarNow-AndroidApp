@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.View.api.Real">
+    <ContentPage.Content >
+        <StackLayout BackgroundColor="#ea641b" >
+            <Frame BackgroundColor="Transparent" Margin="20" Padding="0,0,10,0">
+                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Real brasileño" TextColor="White" FontSize="30" FontFamily="{StaticResource Nexa-Heavy}"></Label>
+            </Frame>
+            <ListView x:Name="ListReal" RowHeight="1000" HasUnevenRows="True" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="white" HeightRequest="450" WidthRequest="100" CornerRadius="40" Margin="30" HasShadow="True">
+                                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                                    <Label Padding="15,0,0,0" FontSize="20" Text="{Binding moneda, StringFormat='Moneda: {0}'}" TextColor="Black" FontFamily="{StaticResource Nexa-Heavy}"/>
+                                    <Label Padding="15,0,0,0" FontSize="20" Text="{Binding nombre, StringFormat='Nombre: {0}'}" TextColor="Black" FontFamily="{StaticResource Nexa-Heavy}"/>
+                                    <Label Padding="15,0,0,0" FontSize="20" Text="{Binding compra, StringFormat='Compra: ${0}'}" TextColor="Black" FontFamily="{StaticResource Nexa-Heavy}"/>
+                                    <Label Padding="15,0,0,0" FontSize="20" Text="{Binding venta, StringFormat='Venta: ${0}'}" TextColor="Black" FontFamily="{StaticResource Nexa-Heavy}" />
+                                    <Label Padding="15,0,0,0" FontSize="20" Text="{Binding fechaActualizacion, StringFormat='Actualizacion: {0}'}" TextColor="Black" FontFamily="{StaticResource Nexa-Heavy}"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Salir" TextColor="Black" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="white"
+                 CornerRadius="100"
+                 HeightRequest="50"
+                 WidthRequest="900"
+                 FontSize="15"
+                 Padding="10"
+                 Margin="40"
+                 x:Name="BtnVolver"
+                 Clicked="BtnVolver_Clicked"
+                 TextTransform="None"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

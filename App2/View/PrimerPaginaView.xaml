@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="App2.View.PrimerPaginaView">
+
+    <Grid>
+
+        <StackLayout BackgroundColor="#ea641b" Padding="10">
+
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="End" Margin="5" Padding="0,0,10,0">
+                <Label TextColor="White" Text="dolarnow" FontSize="30" FontFamily="{StaticResource Nexa-Heavy}"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="15,210,10,100">
+
+                <Label TextColor="Black" VerticalOptions="Center" Text="Checkeá la conversion" FontSize="25" Padding="30,24,10,0" FontFamily="{StaticResource Nexa-ExtraLight}"/>
+                <Label TextColor="Black" VerticalOptions="Center" Text="de tu moneda preferida" FontSize="25" Padding="30,-4.5,10,0" FontFamily="{StaticResource Nexa-ExtraLight}"/>
+                <Label TextColor="#fece00" VerticalOptions="Center" Text="Cuando quieras!" FontSize="25" Padding="30,-4.5,10,0" FontFamily="{StaticResource Nexa-Heavy}"/>
+
+            </StackLayout>
+
+
+            <Button FontFamily="{StaticResource Arial}" Text="Empezar" TextColor="#202122" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="white"
+                 CornerRadius="100"
+                 HeightRequest="50"
+                 WidthRequest="900"
+                 FontSize="15"
+                 Padding="10"
+                 Margin="40"
+                 x:Name="BtnContinuar"
+                 Clicked="BtnContinuar_Clicked"
+                 TextTransform="None"/>
+
+        </StackLayout>
+
+    </Grid >
+
+
+
+</ContentPage>

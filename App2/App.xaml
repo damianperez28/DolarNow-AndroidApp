@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="Roboto-Black" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Roboto-Black.ttf#robot-black"></On>
+            </OnPlatform>
+            <OnPlatform x:Key="Nexa-Heavy" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Nexa-Heavy.ttf#nexa-heavy"></On>
+            </OnPlatform>
+            <OnPlatform x:Key="Nexa-ExtraLight" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Nexa-ExtraLight.ttf#nexa-extralight"></On>
+            </OnPlatform>
+            <OnPlatform x:Key="Arial" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Arial.ttf#arial"></On>
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.View.SegundaPagina">
+
+    <StackLayout BackgroundColor ="#ea641b">
+
+        <Frame BackgroundColor="Transparent" Padding="1" Margin="10">
+            <StackLayout>
+                <Button 
+                
+                FontFamily="fontello" 
+                Text="&#xF0A8;" 
+                    TextColor="White"
+                HorizontalOptions="Start" 
+                VerticalOptions="Start"
+                BackgroundColor="#ea641b"
+                CornerRadius="100"
+                HeightRequest="28"
+                WidthRequest="28"
+                FontSize="30"
+                Padding="0"
+                Margin="0"
+                x:Name="BtnVolver"
+                Clicked="BtnVolver_Clicked"
+                 />
+               
+
+            </StackLayout>
+
+        </Frame>
+
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="white" HeightRequest="250" WidthRequest="100" CornerRadius="40" Margin="30">
+                    <StackLayout>
+                        <Label Padding="10,10,10,10" Text="Dolar Oficial" FontFamily="{StaticResource Nexa-Heavy}" FontSize="30" TextColor="Black"/>
+                        <Label Padding="10,10,10,10" TextColor="#202122" Text="Valor de la compra y la venta de Dolar en su forma Oficial." FontSize="20" FontFamily="{StaticResource Nexa-Heavy}" />
+                        <Button Text="Ver" TextColor="white" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="#ea641b"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        FontSize="15"
+                        Padding="0"
+                        Margin="10,10,10,10"
+                        x:Name="BtnDolar"
+                        Clicked="BtnDolar_Clicked"
+                                TextTransform="None"/>
+                    </StackLayout>
+
+                </Frame>
+                
+                <Frame BackgroundColor="white" HeightRequest="250" WidthRequest="100" CornerRadius="40" Margin="30">
+                    <StackLayout>
+                        <Label Padding="10,10,10,10" Text="Dolar Blue" FontFamily="{StaticResource Nexa-Heavy}" FontSize="30" TextColor="Black"/>
+                        <Label Padding="10,10,10,10" TextColor="#202122" Text="Valor de la compra y la venta de Dolar en su forma Informal." FontSize="20" FontFamily="{StaticResource Nexa-Heavy}" />
+                        <Button Text="Ver" TextColor="white" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="#ea641b"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        FontSize="15"
+                        Padding="0"
+                        Margin="10,10,10,10"
+                        x:Name="BtnDolarBlue"
+                        Clicked="BtnDolarBlue_Clicked"
+                                TextTransform="None"/>
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="white" HeightRequest="250" WidthRequest="100" CornerRadius="40" Margin="30">
+                    <StackLayout>
+                        <Label Padding="10,10,10,10" Text="Euro " FontFamily="{StaticResource Nexa-Heavy}" FontSize="30" TextColor="Black"/>
+                        <Label Padding="10,10,10,10" TextColor="#202122" Text="Valor de la compra y la venta de Euro en su forma Oficial." FontSize="20" FontFamily="{StaticResource Nexa-Heavy}" />
+
+                        <Button Text="Ver" TextColor="white" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="#ea641b"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        FontSize="15"
+                        Padding="0"
+                        Margin="10,10,10,10"
+                        x:Name="BtnEuro"
+                        Clicked="BtnEuro_Clicked"
+                                TextTransform="None"/>
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="white" HeightRequest="250" WidthRequest="100" CornerRadius="40" Margin="30">
+                    <StackLayout>
+                        <Label Padding="10,10,10,10" Text="Real Brasileño" FontFamily="{StaticResource Nexa-Heavy}" FontSize="30" TextColor="Black"/>
+                        <Label Padding="10,10,10,10" TextColor="#202122" Text="Valor de la compra y la venta de Real en su forma Oficial." FontSize="20" FontFamily="{StaticResource Nexa-Heavy}" />
+
+                        <Button Text="Ver" TextColor="white" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" BackgroundColor="#ea641b"
+                        CornerRadius="100"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        FontSize="15"
+                        Padding="0"
+                        Margin="10,10,10,10"
+                        x:Name="BtnReal"
+                        Clicked="BtnReal_Clicked"
+                                TextTransform="None"/>
+                    </StackLayout>
+
+                </Frame>
+
+
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+        
+    </StackLayout>
+
+
+</ContentPage>
